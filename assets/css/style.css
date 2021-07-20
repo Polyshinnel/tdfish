@@ -1,0 +1,118 @@
+/*Сброс стилей*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Подключаем шрифты*/
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.box-container{
+    width: 1260px;
+    margin: auto;
+}
+
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.desctop-nal__list{
+    display: flex;
+    align-items: center;
+}
+
+.desctop-nal__list-item+.desctop-nal__list-item{
+    margin-left: 40px;
+}
+
+.desctop-nal__list-item-link{
+    font-weight: 500;
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.header__social{
+    display: flex;
+    align-items: center;
+}
+
+.header__social-link{
+    text-decoration: none;
+}
+
+.header__social-link+.header__social-link{
+    margin-left: 40px;
+}
+
+.header__phone-link{
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header__button-recall{
+    cursor: pointer;
+    width: 172px;
+    height: 50px;
+    background: #236ADB;
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    font-size: 16px;
+    transition-property: background;
+    transition-duration: .3s;
+}
+
+.header__button-recall:hover{
+    background: #2778F8;
+}
