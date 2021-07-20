@@ -17,7 +17,6 @@ $(".our-partners__slider").owlCarousel({
         0:{
             items:1,
             center: true,
-            margin: 40
         },
         740:{
             items:2,
@@ -41,5 +40,12 @@ $('.banner-arrow-right').on('click', function() {
     $(this).parent().parent().find('.owl-next').trigger('click');
 });
 $('.banner-arrow-left').on('click', function() {
+    $(this).parent().parent().find('.owl-prev').trigger('click');
+});
+
+$('.our-partners__slider-arrow_right').on('click', function() {
+    $(this).parent().parent().find('.owl-next').trigger('click');
+});
+$('.our-partners__slider-arrow_left').on('click', function() {
     $(this).parent().parent().find('.owl-prev').trigger('click');
 });

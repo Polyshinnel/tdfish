@@ -36,9 +36,48 @@
                 </div>
                 <a href="tel:+79109107566" class="header__phone-link"><p class="header__phone">+7 (910) 910-75-66</p></a>
                 <button class="header__button-recall">Оставить заявку</button>
+
+                <div class="header__menu-btn">
+                    <img src="assets/img/menu-btn.svg" alt="">
+                </div>
             </div>
         </div>
         <!--/.box-container-->
+        <div class="header__mobile-navigation">
+            <div class="header__mobile-navigation-wrapper">
+                <div class="header__mobile-navigation-wrapper-box">
+                    <nav class="header__mobile-nav">
+                        <ul class="header__mobile-nav-list">
+                            <li class="header__mobile-nav-list-unit">
+                                <a href="#" class="header__mobile-nav-list-unit-link">Главная</a>
+                            </li>
+                            <li class="header__mobile-nav-list-unit">
+                                <a href="#" class="header__mobile-nav-list-unit-link">О компании</a>
+                            </li>
+                            <li class="header__mobile-nav-list-unit">
+                                <a href="#" class="header__mobile-nav-list-unit-link">Каталог</a>
+                            </li>
+                            <li class="header__mobile-nav-list-unit">
+                                <a href="#" class="header__mobile-nav-list-unit-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__mobile-navigation-social-recall">
+                        <button class="header__mobile-navigation-recall-btn">Оставить заявку</button>
+                        <div class="header__mobile-navigation-social">
+                            <a href="#" class="header__social-link">
+                                <img src="assets/img/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="header__social-link">
+                                <img src="assets/img/instagramm.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__mobile-navigation-wrapper-overlay"></div>
+            </div>
+        </div>
     </header>
 
     <div class="banner-main">
@@ -46,7 +85,10 @@
             <div class="banner-block">
                 <div class="banner-slider owl-carousel">
                     <div class="banner-unit">
-                        <img src="assets/img/banner-main-1.jpg" alt="">
+                        <picture>
+                            <source srcset="assets/img/banner-main_m-1.jpg" media="(max-width: 560px)" />
+                            <img src="assets/img/banner-main-1.jpg" />
+                        </picture>
                         <div class="banner-unit__text">
                             <h2 class="banner-unit__text-header">Производство и продажа</h2>
                             <p class="banner-unit__text-text">рыбного филе, стейков, фасованной рыбы</p>
@@ -58,7 +100,10 @@
                     <!-- /.banner-unit -->
 
                     <div class="banner-unit">
-                        <img src="assets/img/banner-main-1.jpg" alt="">
+                        <picture>
+                            <source srcset="assets/img/banner-main_m-1.jpg" media="(max-width: 560px)" />
+                            <img src="assets/img/banner-main-1.jpg" />
+                        </picture>
                         <div class="banner-unit__text">
                             <h2 class="banner-unit__text-header">Производство и продажа</h2>
                             <p class="banner-unit__text-text">рыбного филе, стейков, фасованной рыбы</p>
@@ -70,7 +115,10 @@
                     <!-- /.banner-unit -->
 
                     <div class="banner-unit">
-                        <img src="assets/img/banner-main-1.jpg" alt="">
+                        <picture>
+                            <source srcset="assets/img/banner-main_m-1.jpg" media="(max-width: 560px)" />
+                            <img src="assets/img/banner-main-1.jpg" />
+                        </picture>
                         <div class="banner-unit__text">
                             <h2 class="banner-unit__text-header">Производство и продажа</h2>
                             <p class="banner-unit__text-text">рыбного филе, стейков, фасованной рыбы</p>
@@ -96,12 +144,13 @@
     <section class="ship-container">
         <div class="box-container">
             <div class="ship-container__wrapper">
-                <img src="assets/img/ship-color.png" alt="">
+                <img class="ship-container-img__desctop" src="assets/img/ship-color.png" alt="">
                 <div class="ship-container__text">
                     <div class="ship-container__text-title">
                         <img src="assets/img/logo-fish.svg" alt="">
                         <h1>Торгово-производственная компания ТД "ФИШ"</h1>
                     </div>
+                    <img class="ship-container-img__mobile" src="assets/img/ship-color.png" alt="">
                     <p class="ship-container__text-text">Производство рыбного филе, стейков, фасованной рыбы.
                         Занимаемся производством филе, стейков, слабосоленого филе, и субпродуктов из лосося. Долгое время специализировались на работе с аквакультурными и дикими лососевыми видами рыб и выстроили работу с ведущими производителями из Норвегии, Англии, Шотландии, Финляндии, Дании, Польше, прибалтийских странах и странах Южной Америки.</p>
                     <a href="#" class="ship-container__text-btn-link">
@@ -194,7 +243,7 @@
             </div>
             <div class="our-production__wrapper">
                 <div class="our-production__block our-production__block_left">
-                    <img src="assets/img/product-cat-1.jpg" alt="">
+                    <img class="our-production__block-img" src="assets/img/product-cat-1.jpg" alt="">
                     <div class="our-production__block-text our-production__block-text_left">
                         <p class="our-production__block-title">Красная рыба</p>
                         <a href="#" class="our-production__block-btn-link">
@@ -207,7 +256,7 @@
                 </div>
     
                 <div class="our-production__block our-production__block_right">
-                    <img src="assets/img/product-cat-2.jpg" alt="">
+                    <img class="our-production__block-img" src="assets/img/product-cat-2.jpg" alt="">
                     <div class="our-production__block-text our-production__block-text-right">
                         <p class="our-production__block-title">Субпродукт <span>красной рыбы</span></p>
                         <a href="#" class="our-production__block-btn-link">
@@ -323,10 +372,59 @@
                 </div>
             </div>
         </div>
+
+        <div class="box-container">
+            <div class="footer__wrapper-mobile">
+                <div class="footer__logo-nav">
+                    <div class="footer__logo-copyright">
+                        <img src="assets/img/footer-logo.svg" alt="" class="footer__logo">
+                        <p class="footer__copyright">Copyright ©2021</p>
+                    </div>
+    
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">О компании</a></li>
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Каталог</a></li>
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+
+                <div class="footer__address">
+                    <img src="assets/img/footer-fish.svg" alt="">
+                    <p>249033, РФ, Калужская область, г.Обнинск, пр-т Ленина, д.139, офис 77</p>
+                </div>
+
+                <a href="tel:+79109107566" class="footer__phone">
+                    <p>+7 (910) 910-75-66</p>
+                </a>
+
+                <div class="footer__social-recall">
+                    <button class="footer__btn-recall">Оставить заявку</button>
+
+                    <div class="footer__social">
+                        <div class="footer__social-unit">
+                            <a href="#" class="footer__social-unit-link">
+                                <img src="assets/img/facebook-footer.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="footer__social-unit">
+                            <a href="#" class="footer__social-unit-link">
+                                <img src="assets/img/instagramm-footer.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </footer>
 
     <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/vendor/owl/owl.carousel.min.js"></script>
     <script src="assets/js/owl-settings.js"></script>
+    <script src="assets/js/common-scritps.js"></script>
 </body>
 </html>
