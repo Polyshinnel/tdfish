@@ -1,6 +1,7 @@
 /*Сброс стилей*/
 *{
     box-sizing: border-box;
+    outline: none !important;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -1578,5 +1579,364 @@ body{
     .contacts-form__input{
         width: 100%;
         margin-top: 20px;
+    }
+}
+
+.category-block{
+    margin-top: 25px;
+}
+
+.category-block__unit+.category-block__unit{
+    margin-top: 50px;
+}
+
+.category-block__unit{
+    display: flex;
+    align-items: flex-start;
+}
+
+.category-block__unit-text{
+    margin-left: 56px;
+}
+
+.category-block__unit-title{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.category-block__unit-char-block{
+    margin-top: 25px;
+}
+
+.category-block__unit-char-unit{
+    display: flex;
+    align-items: center;
+}
+
+.category-block__unit-char-unit+.category-block__unit-char-unit{
+    margin-top: 25px;
+}
+
+.char-name{
+    width: 105px;
+    font-size: 18px;
+    color: #666;
+}
+
+.char-info{
+    margin-left: 50px;
+    font-weight: 500;
+    color: #333;
+}
+
+.category-block__unit-btn{
+    margin-top: 25px;
+    width: 184px;
+    height: 50px;
+    border: 2px solid #FF0000;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: .5s;
+}
+
+.category-block__unit-btn:hover{
+    background: #FF0000;
+    color: #fff;
+}
+
+@media(max-width:560px){
+    .category-block__unit{
+        flex-direction: column;
+    }
+    .category-block__unit img{
+        width: 100%;
+    }
+    .category-block__unit-text{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .category-block__unit-title{
+        font-size: 18px;
+    }
+    .category-block__unit-char-unit+.category-block__unit-char-unit{
+        margin-top: 10px;
+    }
+    .char-name{
+        font-size: 12px;
+        width: 74px;
+    }
+    .char-info{
+        margin-left: 14px;
+        font-size: 12px;
+    }
+    .category-block__unit-btn{
+        width: 164px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+.recall-form__overlay{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.recall-form__wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recall-form__base{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.recall-form__box{
+    background: #fff;
+    position: relative;
+    z-index: 150;
+    width: 398px;
+    padding: 27px 27px 18px;
+    border-radius: 6px;
+}
+
+.recall-form__cross{
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    cursor: pointer;
+}
+
+.recall-form__title{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.recall-form__input-block{
+    margin-top: 18px;
+    width: 100%;
+}
+
+.recall-form__input-block input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #C4C4C4;
+    border-radius: 100px;
+    padding: 0 18px;
+    font-size: 16px;
+}
+
+.recall-form__input-block input+input{
+    margin-top: 10px;
+}
+
+.recall-form__region-select{
+    margin-top: 10px;
+    position: relative;
+}
+
+.recall-form__region-select-input{
+    position: relative;
+}
+
+.recall-form__region-select-input input{
+    cursor: pointer;
+}
+
+.input-angle{
+    position: absolute;
+    top: 22px;
+    right: 18px;
+    cursor: pointer;
+}
+
+.recall-form__region-select-block{
+    position: absolute;
+    top: 103%;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+    height: 200px;
+    display: none;
+    z-index: 200;
+}
+
+.recall-form__region-select-unit{
+    width: 100%;
+    padding: 12px 18px;
+    background: #fff;
+    transition-property: background;
+    transition-duration: .5s;
+}
+
+.recall-form__region-select-unit:hover{
+    cursor: pointer;
+    color: #fff;
+    background: #236ADB;
+}
+
+/*Стилизация чекбокса*/
+.checkbox-other {
+	display: block;
+	margin: 0 0 10px 0;
+	cursor: pointer;
+	user-select: none;
+	position: relative;
+}
+.checkbox-other input[type=checkbox] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.checkbox-other span {
+	display: inline-block;
+	position: relative; 
+	padding: 0 0 0 35px; 
+	line-height: 18px;
+    font-size: 16px;
+    color: #333;
+}
+.checkbox-other span:before {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+    border: 2px solid #C5C5C5;
+    border-radius: 5px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../img/checkbox.svg)no-repeat;
+    background-position: center;
+}
+ 
+/* Checked */
+.checkbox-other input[type=checkbox]:checked + span:before {
+	background-image: url('');
+}
+ 
+/* Focus */
+.focused span:before {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+/* Active */
+.checkbox-other span:active:before {
+	filter: brightness(80%);
+}
+ 
+/* Disabled */
+.checkbox-other input[type=checkbox]:disabled + span {
+	color: #666;
+	cursor: default;
+}
+.checkbox-other input[type=checkbox]:disabled + span:before {
+	filter: grayscale(100%);
+	opacity: 0.6;
+}
+
+.recall-form__checkbox-line{
+    display: flex;
+    margin-top: 26px;
+}
+
+.recall-form__checkbox-line-title{
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin: 2px;
+}
+
+.recall-form__checkbox-line-block{
+    display: flex;
+    margin-left: 13px;
+}
+
+.recall-form__checkbox-line-checkbox+.recall-form__checkbox-line-checkbox{
+    margin-left: 15px;
+}
+
+.recall-form__btn{
+    margin-top: 23px;
+    width: 100%;
+    height: 50px;
+    background: #236ADB;
+    border-radius: 100px;
+    border: 0px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: .5s;
+}
+
+.recall-form__btn:hover{
+    background: #2778F8;
+}
+
+.confidential-policy{
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.confidential-policy a{
+    text-decoration: none;
+    color: #ff0000;
+}
+
+.input-angle_rotate{
+    transform: rotate(180deg);
+}
+
+@media(max-width:560px){
+    .recall-form__box{
+        width: 330px;
+    }
+    .recall-form__checkbox-line{
+        flex-direction: column;
+    }
+    .recall-form__checkbox-line-block{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .recall-form__input-block input{
+        height: 40px;
+    }
+    .recall-form__title{
+        font-size: 22px;
+    }
+    .recall-form__btn{
+        height: 40px;
+        margin-top: 15px;
+    }
+    .input-angle{
+        top: 17px;
     }
 }
