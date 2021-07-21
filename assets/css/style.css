@@ -978,3 +978,605 @@ body{
     position: absolute;
     z-index: 1;
 }
+
+.header_border-bottom{
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.page-body{
+    margin-top: 25px;
+}
+
+.breadcrumbps{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.breadcrumbps__item{
+    font-size: 14px;
+    color: #666;
+}
+
+.breadcrumbps__item-link{
+    text-decoration: none;
+    color: #236ADB;
+}
+
+.page__title{
+    margin-top: 21px;
+    font-weight: 900;
+    font-size: 42px;
+}
+
+.section__subtitle{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.section__subtitle_center{
+    text-align: center;
+}
+
+.about-company-block{
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-company-block__img{
+    border-radius: 6px;
+}
+
+.about-company-block__text{
+    margin-left: 34px;
+}
+
+.about-company-block__text-paragraph{
+    color: #333;
+    font-size: 16px;
+    line-height: 180%;
+}
+
+.about-company-block__text-paragraph+.about-company-block__text-paragraph{
+    margin-top: 25px;
+}
+
+.geography-block{
+    height: 514px;
+    width: 100%;
+    background: url(../img/fish-bg.svg);
+    background-repeat: repeat-x;
+    margin-top: 48px;
+    padding-top: 30px;
+}
+
+.geography-block__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.geography-block__text{
+    width: 416px;
+}
+
+.geography-block__text-text{
+    margin-top: 14px;
+    font-size: 16px;
+    color: #333;
+    line-height: 180%;
+}
+
+.geography-block__text-columns{
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.geography-block__text-column p{
+    font-weight: 500;
+    color: #333;
+
+}
+
+.geography-block__text-column p+p{
+    margin-top: 10px;
+}
+
+.about-sales{
+    margin-top: 26px;
+}
+
+.about-sales__text-block{
+    margin-top: 20px;
+}
+
+.about-sales__text{
+    font-size: 16px;
+    color: #333;
+    line-height: 180%;
+}
+
+.about-sales__text+.about-sales__text{
+    margin-top: 20px;
+}
+
+.about-sales__text-link{
+    text-decoration: none;
+    color: #1C5BBF;
+}
+
+.about-sales__banner{
+    margin-top: 30px;
+    position: relative;
+}
+
+.about-sales__banner img{
+    width: 100%;
+}
+
+.about-sales__banner-text{
+    color: #fff;
+    position: absolute;
+    top: 63px;
+    left: 63px;
+    width: 374px;
+}
+
+.about-sales__banner-text h3{
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.about-sales__banner-text p{
+    margin-top: 17px;
+    font-size: 16px;
+    line-height: 180%;
+}
+
+.about-our-production{
+    margin-top: 50px;
+}
+
+@media(max-width:560px){
+    .about-company-block{
+        flex-direction: column;
+    }
+    .about-company-block__img{
+        width: 100%;
+    }
+    .about-company-block__text{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .about-company-block__text-paragraph{
+        font-size: 14px;
+    }
+    .geography-block{
+        background: #fff;
+        height: auto;
+        padding-top: 0;
+    }
+    .geography-block__wrapper{
+        flex-direction: column;
+    }
+    .geography-block__text{
+        width: 100%;
+    }
+    .geography-block__wrapper img{
+        margin-top: 20px;
+    }
+    .about-sales__banner-text{
+        left: 18px;
+        top: 24px;
+        width: 300px;
+    }
+    .about-sales__banner-text h3{
+        font-size: 20px;
+    }
+    .about-sales__banner-text p{
+        margin-top: 8px;
+        font-size: 14px;
+    }
+}
+
+.fish-sales{
+    margin-top: 26px;
+}
+
+.fish-sales__title{
+    width: 398px;
+    height: 82px;
+    background: url(../img/adv-bg.jpg);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 0 28px;
+}
+
+.fish-sales__title h2{
+    font-weight: 700;
+    font-size: 38px;
+    color: #fff;
+}
+
+.fish-sales__wrapper{
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fish-sales__unit{
+    position: relative;
+}
+
+.fish-sales__unit img{
+    border-radius: 6px;
+}
+
+.fish-sales__unit-name{
+    position: absolute;
+    padding: 0 28px;
+    width: 100%;
+    left: 0;
+    bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fish-sales__unit-name-text{
+    font-size: 28px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.fish-sales__unit-btn{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #FF0000;
+    transition-property: background;
+    transition-duration: .5s;
+}
+
+.fish-sales__unit-btn img{
+    width: 16px;
+}
+
+.fish-sales__unit-btn:hover{
+    background: #FF0000;
+}
+
+.fish-sales__btn{
+    width: 250px;
+    height: 50px;
+    background: #236ADB;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: .5s;
+}
+
+.fish-sales__btn:hover{
+    background: #2778F8;
+}
+
+.catalog-subproduct-banner{
+    margin-top: 48px;
+    position: relative;
+}
+
+.catalog-subproduct__text{
+    position: absolute;
+    width: 309px;
+    top: 66px;
+    left: 66px;
+    color: #fff;
+}
+
+.catalog-subproduct__text h2{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.catalog-subproduct__text p{
+    margin-top: 22px;
+    font-size: 16px;
+    line-height: 180%;
+}
+
+.fish-sales__btn_mod{
+    margin: 0;
+    margin-right: auto;
+    margin-top: 46px;
+}
+
+@media(max-width:560px){
+    .page__title{
+        font-size: 20px;
+    }
+    .fish-sales__title{
+        width: 227px;
+        height: 51px;
+        padding: 0 20px;
+    }
+    .fish-sales__title h2{
+        font-size: 20px;
+    }
+    .fish-sales__wrapper{
+        flex-direction: column;
+    }
+    .fish-sales__unit img{
+        width: 100%;
+    }
+    .fish-sales__unit-btn img{
+        width: 16px !important;
+    }
+    .fish-sales__unit+.fish-sales__unit{
+        margin-top: 15px;
+    }
+    .catalog-subproduct__text{
+        top: 22px;
+        left: 22px;
+        width: 190px;
+    }
+    .catalog-subproduct__text h2{
+        font-size: 20px;
+    }
+    .catalog-subproduct__text p{
+        margin-top: 8px;
+        font-size: 14px;
+    }
+    .fish-sales__btn_mod{
+        margin-top: 16px;
+        width: 190px;
+        font-size: 14px;
+    }
+}
+
+.contacts-block{
+    margin-top: 26px;
+}
+
+.contacts-block__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-block__address{
+    width: 289px;
+}
+
+.contacts-block__map{
+    width: 830px;
+    height: 431px;
+}
+
+.contacts-block__address-unit+.contacts-block__address-unit{
+    margin-top: 40px;
+}
+
+.contacts-block__address-unit-header{
+    display: flex;
+    align-items: center;
+}
+
+.contacts-block__address-unit-header h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 18px;
+}
+
+.contacts-block__address-address{
+    margin-top: 14px;
+    font-size: 18px;
+    color: #333;
+    line-height: 150%;
+}
+
+.page__title_contacts{
+    margin-bottom: 28px;
+}
+
+.manager-block{
+    margin-top: 26px;
+}
+
+.manager-block__title{
+    display: flex;
+    align-items: center;
+}
+
+.manager-block__title h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.manager-block__wrapper{
+    margin-top: -30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.manager-block__unit{
+    width: 250px;
+    margin-top: 50px;
+    color: #333;
+}
+
+.manager-block__unit-title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.manager-block__unit p{
+    margin-top: 7px;
+}
+
+.special-manager{
+    color: #FF0000;
+}
+
+.contacts-form{
+    margin-top: 40px;
+    background: #F0F6FF;
+    border-radius: 6px;
+    padding: 30px 23px 30px 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts-form__text{
+    width: 508px;
+}
+
+.contacts-form__text-title{
+    display: flex;
+    align-items: center;
+}
+
+.contacts-form__text h2{
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 28px;
+}
+
+.contacts-form__text p{
+    padding-left: 100px;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.contacts-form__input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacts-form__input-line{
+    display: flex;
+    align-items: center;
+}
+
+.contacts-form__input-line input{
+    width: 287px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #E4E7EC;
+    border-radius: 100px;
+    font-size: 16px;
+    padding: 0 23px;
+}
+
+.contacts-form__input-line input+input{
+    margin-left: 6px;
+}
+
+.contacts-form__input-line+.contacts-form__input-line{
+    margin-top: 9px;
+}
+
+.contacts-form__input textarea{
+    width: 100%;
+    margin-top: 9px;
+    width: 580px;
+    height: 95px;
+    background: #FFFFFF;
+    border: 1px solid #E4E7EC;
+    border-radius: 20px;
+    padding: 14px 20px;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.contacts-form__btn{
+    margin-top: 18px;
+    width: 225px;
+    height: 50px;
+    background: #236ADB;
+    border-radius: 100px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: .5s;
+}
+
+.contacts-form__btn:hover{
+    background: #2778F8;
+}
+
+@media(max-width:560px){
+    .contacts-block__wrapper{
+        flex-direction: column;
+    }
+    .contacts-block__map{
+        width: 340px;
+        height: 328px;
+        margin-top: 15px;
+    }
+    .contacts-block__map img{
+        width: 100%;
+    }
+    .manager-block__unit{
+        width: 165px;
+    }
+    .contacts-form{
+        flex-direction: column;
+        padding: 30px 14px;
+    }
+    .contacts-form__input-line{
+        flex-direction: column;
+        width: 100%;
+    }
+    .contacts-form__text{
+        width: 100%;
+    }
+    .contacts-form__input textarea{
+        width: 100%;
+        height: 115px;
+    }
+    .contacts-form__input-line input+input{
+        margin-left: 0;
+        margin-top: 9px;
+    }
+    .contacts-form__input-line input{
+        width: 100%;
+    }
+    .contacts-form__text-title img{
+        width: 73px;
+    }
+    .contacts-form__text-title h2{
+        font-size: 20px;
+    }
+    .contacts-form__text p{
+        margin-top: 6px;
+        font-size: 16px;
+    }
+    .contacts-form__input{
+        width: 100%;
+        margin-top: 20px;
+    }
+}

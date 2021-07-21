@@ -23,3 +23,10 @@ $(window).scroll(function () {
         $('.header__menu-btn img').attr('src', menuImg);
     } 
 });
+
+$(document).ready(function() {
+    var path = window.location.pathname;
+    if(path != '/'){
+        $('.header').addClass('header_border-bottom');
+    }
+});
